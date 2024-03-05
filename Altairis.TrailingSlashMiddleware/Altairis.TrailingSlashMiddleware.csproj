@@ -1,0 +1,42 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
+		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+		<Title>Altairis Trailing Slash Middleware</Title>
+		<Authors>Michal Altair Valášek</Authors>
+		<Company>Altairis, s. r. o.</Company>
+		<Product>Altairis Trailing Slash Middleware</Product>
+		<Description>ASP.NET Core Middleware for adding or removing trailing slashes to URLs.</Description>
+		<Copyright>(c) Altairis, 2024</Copyright>
+		<RepositoryUrl>https://github.com/ridercz/Altairis.TrailingSlashMiddleware.git</RepositoryUrl>
+		<RepositoryType>git</RepositoryType>
+		<PackageProjectUrl>https://github.com/ridercz/Altairis.TrailingSlashMiddleware</PackageProjectUrl>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+		<Version>1.0.0</Version>
+		<PackageIcon>NuGet-64x64.png</PackageIcon>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<IncludeSymbols>True</IncludeSymbols>
+		<SymbolPackageFormat>snupkg</SymbolPackageFormat>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Microsoft.AspNetCore.App" Version="8.0.0" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<None Include="..\.editorconfig" Link=".editorconfig" />
+		<None Include="..\README.md">
+			<Pack>True</Pack>
+			<PackagePath>\</PackagePath>
+		</None>
+		<None Include="..\NuGet-64x64.png">
+			<Pack>True</Pack>
+			<PackagePath></PackagePath>
+		</None>
+	</ItemGroup>
+
+
+</Project>
